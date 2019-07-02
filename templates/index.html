@@ -7,166 +7,309 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/styling/main.css">
 
-    <title>beamer</title>
+    <title>Kreative</title>
   </head>
-  <body data-spy="scroll" data-target="#navbarResponsive">
+  <body>
+      <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+          <div class="container-fluid">
+              <a href="#" class="navbar-brand"><img src="../assets/" alt="">Logo</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse main-menu" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto malink">
+                    <li class="nav-item active"><a href="./services.html">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+        
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
+          <ol class="carousel-indicators">
+              <li data-target="#caroueselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#caroueselExampleIndicators" data-slide-to="1" ></li>
+              <li data-target="#caroueselExampleIndicators" data-slide-to="2" ></li>
+          </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img src="../assets/images/bmw1.jpg" class="karosel" alt="...">
+            <div class="carousel-caption text-center">
+                <h1></h1>
+                <h3> gear</h3>
+                <a href="#">ref2daimage</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/bluengine.jpg" class="karosel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/diagnosis.jpg" class="karosel" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <header>
+        
 
-        <div id="home">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand" href="index.html">
-                    <img src="../assets/images/" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#location">location</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                  </ul>
+        <div class="overlay">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="../assets/videos/wedding.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+              <h1 class="display-3">McCOMS MEDIA</h1>
+              <hr class="horiz">
+              <p class="lead mb-0">We create what you are looking for</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </header>
+      
+      <section class="my-3">
+        <div class="containter-fluid text-center">
+          <div class="row">
+            <div class="col-md-12 mx-auto servicecontainer">
+              <h2 class="text-center">What we do</h2>
+              <hr class="horiz">
+              <p>We develop life time stories through images in motion.
+
+              <div class="jumbotron containter-fluid  my-5 text-center servicejumbotron">
+                <div class="row padleft">
+                 <div class="col-md-4">
+                    <ul class="text-left">
+                      <li >
+                        <i class="far fa-heart"></i>
+                        <span>wedding</span>
+                      </li>
+                      <li>
+                          <i class="far fa-calendar-alt"></i>
+                        <span>Events</span>
+                      </li>
+                      <li>
+                          <i class="fas fa-book"></i>
+                        <span>Documentaries</span>
+                      </li>
+                    </ul>
+                 </div>
+                 <div class="col-md-4">
+                    <ul class="text-left">
+                        <li>
+                          <span>
+                            <i class="fas fa-handshake"></i>
+                        <span>Promotion videos</span>
+                          </span>
+                        </li>
+                        <li>
+                            <i class="fab fa-shirtsinbulk"></i>
+                            <span>Fashion</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-video"></i>
+                            <span>Interviews</span>
+                        </li>
+                      </ul>
+                 </div>
+                 <div class="col-md-4">
+                    <ul class="text-left">
+                        <li>
+                          <span>
+                              <i class="far fa-futbol"></i>
+                        <span>Sports</span>
+                          </span>
+                        </li>
+                        <li>
+                            <i class="fas fa-users"></i>
+                            <span>Conferences</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-camera"></i>
+                            <span>Debates</span>
+                        </li>
+                      </ul>
+                 </div>
                 </div>
-            </nav>
+              </div>
+            </div>
 
-            <!-- <div id="caroueselExampleIndicators" class="carousel slide" data-ride="carousel" >
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="plx">
+          <div class="containter-fluid">
+            <div class="paralxcontainer text-center">
+                <h2 class="heady">We believe in</h2>
+                <hr class="horiz">
+              <div class="col-md-4 believein text-left">
+                <h3>Client satisfaction</h3>
+                  <p>We listen to our clients and work to satisfy
+                     their desires.</p>
+                  <hr>
+                <h3>Client relationship</h3>
+                  <p>We value our clients and <br>
+                    we strive to keep a long term relationship.</p>
+                  <hr>
+                <h3>Integrity</h3>
+                  <p>We honor our promises and work to deliver with <br>
+                     a high level of transparency.</p>
+                  <hr>
+                <h3>Creativity</h3>
+                  <p>We develop content and tell stories <br>
+                     in the most creative way.</p>
+                  <hr>
+              </div>
+            </div> 
+          </div>
+      </section>
+
+
+      <section>
+          <div class="containre-fluid">
               
-              <div class="carousel-inner" >
-                <div class="carousel-item active homme"  style="background-image: url('')">
-                  <div class="carousel-caption text-center">
-                    <h1>Luxury interior</h1>
-                    <h3> we do interior</h3>
-                    <a href="#">ref2daimage</a>
-                  </div>
-                </div>
-                <div class="carousel-item homme" style="background-image: url('../assets/images/bluengine.jpg')">
-                  <div class="carousel-caption text-center">
-                    <h1>Engine</h1>
-                    <h3>engine</h3>
-                    <a href="#">ref2daimage</a>
-                  </div>
-                </div>
-                <div class="carousel-item homme" style="background-image: url('../assets/images/gear.jpg')">
-                  <div class="carousel-caption text-center">
-                    <h1>Transmission</h1>
-                    <h3> gear</h3>
-                    <a href="#">ref2daimage</a>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#caroueselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              </a>
-              <a class="carousel-control-next" href="#caroueselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div> -->
+          </div>
+        </section>
 
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="2000">
-                <ol class="carousel-indicators">
-                    <li data-target="#caroueselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#caroueselExampleIndicators" data-slide-to="1" ></li>
-                    <li data-target="#caroueselExampleIndicators" data-slide-to="2" ></li>
-                </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                  <img src="../assets/images/bmw1.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption text-center">
-                      <h1>Transmission</h1>
-                      <h3> gear</h3>
-                      <a href="#">ref2daimage</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="../assets/images/bluengine.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="../assets/images/diagnosis.jpg" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+      <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                  <h2 class="text-center"></h2>
+                  <div class="containter-fluid  my-5 text-center servicejumbotron">
+                          <div class="col-md-12 mx-auto" id="portfolio">
+                            <h2 class="text-center"> Portfolio</h2>
+                            <hr class="horiz">
+                            <p>Have a test of what we have worked on.</p>
+                            <div class="containter-fluid  my-5 text-center servicejumbotron">
+                              <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe class="embed-responsive-item"
+                                      src="../../assets/videos/wedding.mp4" frameborder="0" ></iframe>
+                                    </div>
+                                  </div>
+                                
+                                <div class="col-sm-4">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe class="embed-responsive-item"
+                                      src="../../assets/videos/fashion2.mp4" frameborder="0"></iframe>
+                                    </div>
+                                  </div>
 
-            <div class="jumbotron containter-fluid">
-              <h3 class="heading text-center">Services</h3>
-              <div class="heading-underline"></div>
-              <div class="row no-padding">
-                <div class="col-sm-4">
-                  <div class="services">
-                    <a href="#">
-                      <img src="../assets/images/wash1.jpg" class="img-fluid" alt="services">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="services">
-                      <a href="#">
-                        <img src="../assets/images/bmw1.jpg" class="img-fluid" alt="services">
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                      <div class="services">
-                        <a href="#">
-                          <img src="../assets/images/revamp.jpg" class="img-fluid" alt="services">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="services">
-                          <a href="#">
-                            <img src="../assets/images/bluengine.jpg" class="img-fluid" alt="services">
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-sm-4">
-                          <div class="services">
-                            <a href="#">
-                              <img src="../assets/images/spana.jpg" class="img-fluid" alt="services">
-                            </a>
+                                <div class="col-sm-4">
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item"
+                                    src="../../assets/videos/rally.mp4" frameborder="0"></iframe>
+                                  </div>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                      <iframe class="embed-responsive-item"
+                                      src="../../assets/videos/documentary.mp4" frameborder="0"></iframe>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-sm-4">
+                                      <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                        src="../../assets/videos/tt.mp4" frameborder="0"></iframe>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-sm-4 spaced">
+                                        <div class="embed-responsive embed-responsive-16by9 d-block mb-4 h-100">
+                                          <iframe class="embed-responsive-item"
+                                          src="../../assets/videos/dj.mp4" frameborder="0"></iframe>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-sm-4">
+                                          <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item"
+                                            src="../../assets/videos/fashion1.mp4" frameborder="0"></iframe>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                              <iframe class="embed-responsive-item"
+                                              src="../../assets/videos/concert.mp4" frameborder="0"></iframe>
+                                            </div>
+                                          </div>
+
+                                          <div class="col-sm-4">
+                                              <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item"
+                                                src="../../assets/videos/sports.mp4" frameborder="0"></iframe>
+                                              </div>
+                                            </div>
+                              </div>
+                            </div><br>
+                          <h2 class="text-center">Find us</h2>
+                          <p>Reach us via email, whatsapp or give us a call.</p>
                           </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="services">
-                              <a href="#">
-                                <img src="../assets/images/gear.jpg" class="img-fluid" alt="services">
-                              </a>
-                            </div>
-                          </div>
-              </div>
-            </div>
+                  </div>
+                </div>
+              </div> 
+        </div>
+      </section>
 
+      <section id="plx1">
+        <div class="container-fluid my-5 text-center">
+          <div class="row text-left contactus">
+              <div class="col-md-6">
+              </div>
+              <div class="col-md-6 details" id="contact">
+                  <h4>Contact us</h4>
+                    <p><i class="far fa-envelope"></i>: mackinbarasa@gmail.com<br>   --: mackinbarasa@gmail.com</p>
+                    <p><i class="fas fa-phone-square"></i>: 0721375536 <br>   --: 0721375536</p>
+                    <p><i class="fab fa-whatsapp"></i>: 0721375536<br>   --: 0721375536</p>
+                </div>
+          </div>
         </div>
-    
-        <div id="services">
-            
-        </div>
-    
-        <div id="location">
-            
-        </div>
-    
-        <div id="contact">
-            
-        </div>
+      </section>
+
+      <section>
+          <footer class="futa">
+              <div class="container-fluid py-5">
+                <div class="row text-center">
+                  <div class="col-sm-4 text-center">
+                    <h3>Logo</h3>
+                   <p>&copy;mackinbarasa||companyname</p>
+                  </div>
+                  <div class="col-sm-4 text-left">
+                    <p> <a href="https://www.instagram.com/" class="social-ig"><i class="fab fa-instagram modify-ig"> </i> maccomsigname</a></p>
+                    <p><a href="https://www.facebook.com/" class="social-fb"><i class="fab fa-facebook-square modify-fb"> </i> maccomsfbname</a></p>
+                    <p><a href="https://twitter.com/" class="social-twitter"><i class="fab fa-twitter-square modify-twitter"> </i> maccomslinkedinname</a></p>
+                   </div>
+                   <div class="col-sm-4 text-center">
+                     <a href="#" class="backtop"><i class="fas fa-arrow-up"> <br></i></a> 
+                   </div>
+                </div>
+              </div>
+            </footer>
+      </section>
+
+  </body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
