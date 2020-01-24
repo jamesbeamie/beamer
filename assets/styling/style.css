@@ -203,6 +203,59 @@ main .site-title .btn:hover {
   color: var(--white);
 }
 /* Landing section */
+
+/* Other pages */
+main .section-title .section-head {
+  color: rgb(72, 100, 226);
+  text-align: center;
+}
+main .section-title .section-head hr {
+  width: 10%;
+  margin: auto;
+}
+/* Image-cards */
+/* main .service-card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+main .cards-content {
+  width: 100%;
+}
+main .service-card .cards-content > .card-image {
+  padding: 1rem, 2rem;
+  position: relative;
+  margin: 2rem;
+}
+main .service-card .cards-content > .card-image .img {
+  width: 100%;
+} */
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: start;
+  margin: 2rem;
+}
+.card > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.card > article img {
+  max-width: 100%;
+}
+.text {
+  padding: 0 20px 20px;
+}
+.text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+/* Image-cards */
+/* Other pages */
 /* Main */
 /* Responsiveness */
 
