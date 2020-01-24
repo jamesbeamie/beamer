@@ -172,6 +172,38 @@ span {
   color: #bfbfbf;
 }
 /* Navigation bar */
+
+/* Main  */
+/* Landing section */
+main .site-title {
+  /* background: url("../assets/alexandru-g-stavrica-J5Si8M5IIhU-unsplash.jpg"); */
+  background: url("../images/e46.jpg");
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+main .site-title .site-background {
+  padding-top: 10rem;
+  text-align: center;
+  color: var(--white);
+}
+main .site-title h1,
+h3 {
+  margin: 0.3rem;
+}
+
+main .site-title .btn {
+  background: var(--mayai);
+}
+
+main .site-title .btn:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: var(--white);
+}
+/* Landing section */
+/* Main */
 /* Responsiveness */
 
 /* Media query for ViewPort =< 1130px*/
