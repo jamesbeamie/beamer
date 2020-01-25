@@ -92,7 +92,7 @@ span {
 /* Navigation bar */
 
 .nav {
-  background: white;
+  background: rgb(217, 221, 224);
   padding: 0% 2rem;
   height: 0;
   min-height: 10vh;
@@ -183,21 +183,36 @@ main .site-title {
   display: flex;
   justify-content: center;
 }
-main .site-title .site-background {
+
+.about-title {
+  /* background: url("../assets/alexandru-g-stavrica-J5Si8M5IIhU-unsplash.jpg"); */
+  background: url("../images/about.jpg");
+  opacity: 0.7;
+  background-size: cover;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+}
+main .site-title .site-background,
+.about-title .about-background {
   padding-top: 10rem;
   text-align: center;
   color: var(--white);
+  z-index: 100;
 }
-main .site-title h1,
+main .site-title,
+.about-title h1,
 h3 {
   margin: 0.3rem;
 }
 
-main .site-title .btn {
+main .site-title .btn,
+.about-title .btn {
   background: var(--mayai);
 }
 
-main .site-title .btn:hover {
+main .site-title .btn:hover,
+.about-title .btn:hover {
   background: transparent;
   border: 1px solid white;
   color: var(--white);
@@ -247,13 +262,22 @@ main .service-card .cards-content > .card-image .img {
 .text {
   padding: 0 20px 20px;
 }
-.text > button {
-  background: gray;
-  border: 0;
-  color: white;
-  padding: 10px;
-  width: 100%;
+/* About page */
+.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: start;
+  margin: 2rem;
 }
+.info > article .img {
+  max-width: 100%;
+  color: var(--blu);
+}
+.text {
+  padding: 0 20px 20px;
+}
+/* About */
 /* Image-cards */
 /* Other pages */
 /* Main */
