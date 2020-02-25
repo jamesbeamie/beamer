@@ -135,12 +135,9 @@ span {
   height: 20rem;
 }
 
-.nav .nav-brand a {
-  font-size: 1.6rem;
-  padding: 1rem 0;
-  display: block;
-  /*calling fontFamily variable*/
-  font-family: var(--Roboto);
+.nav .nav-brand a img {
+  height: 5rem;
+  padding-bottom: 0.5rem;
 }
 .nav .nav-items .nav-link:hover {
   background-color: var(--blu);
@@ -358,6 +355,10 @@ footer.footer .move-up span:hover {
 /* Media query for ViewPort =< 1130px*/
 
 @media only screen and (max-width: 1130px) {
+  .nav .nav-brand a img {
+    height: 9rem;
+    /* padding-top: 0.8rem; */
+  }
   main .card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -378,6 +379,10 @@ footer.footer .move-up span:hover {
 
 /* Media query for ViewPort =< 750px media queries*/
 @media only screen and (max-width: 750px) {
+  .nav .nav-brand a img {
+    height: 9rem;
+    padding-top: 0.8rem;
+  }
   .nav .nav-items .nav-link {
     padding: 0.6rem 1rem !important;
   }
@@ -420,6 +425,14 @@ footer.footer .move-up span:hover {
 /* ViewPort =< 520 */
 
 @media only screen and (max-width: 520px) {
+  .nav .nav-brand {
+    height: 5rem;
+    padding-bottom: 0.2rem;
+  }
+  .nav .nav-brand a img {
+    height: 5rem;
+    width: 60% !important;
+  }
   nav .toggle-collapse {
     width: 85% !important;
   }
