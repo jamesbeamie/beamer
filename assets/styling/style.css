@@ -358,19 +358,20 @@ footer.footer .move-up span:hover {
 /* Media query for ViewPort =< 1130px*/
 
 @media only screen and (max-width: 1130px) {
-  .site-content .post-content > .post-image .post-info {
-    left: 0.1rem !important;
-    bottom: 0.2rem !important;
-    border-radius: 0% !important;
+  main .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: start;
+    margin: 2rem;
   }
 
-  .site-content .sidebar .popular-post .post-info {
-    /* removes the link to youtube */
-    display: none !important;
+  main .card > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
   }
-
-  footer.footer .container {
-    grid-template-columns: repeat(2, 1fr);
+  main .card > article img {
+    max-width: 100%;
   }
 }
 /* Media query for ViewPort =< 1130px*/
@@ -388,9 +389,28 @@ footer.footer .move-up span:hover {
     display: initial;
   }
 
-  main .site-content {
-    grid-template-columns: 100%;
+  main .card,
+  main .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: start;
+    margin: 1rem;
   }
+  main .card > article,
+  main .info {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  main .card > article img,
+  main .info > article .img,
+  main .info > article .text {
+    max-width: 100%;
+  }
+
+  /* main .site-content {
+    grid-template-columns: 100%;
+  } */
   footer.footer .container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -403,12 +423,34 @@ footer.footer .move-up span:hover {
   nav .toggle-collapse {
     width: 85% !important;
   }
-  main .blog {
+  main .card,
+  main .info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    align-items: start;
+    margin: 1rem;
+  }
+  main .card > article,
+  main .info {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  }
+  main .card > article img,
+  main .info > article .img,
+  main .info > article .text {
+    max-width: 100%;
+  }
+
+  /* main .site-content {
+    grid-template-columns: 100%;
+  } */
+  /* main .blog {
     height: 125vh;
   }
   .site-content .post-content > .post-image .post-info {
     display: none;
-  }
+  } */
 
   footer.footer .container > div {
     padding: 0.3rem 0.5rem !important;
