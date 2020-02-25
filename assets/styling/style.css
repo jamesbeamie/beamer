@@ -433,6 +433,9 @@ footer.footer .move-up span:hover {
     height: 5rem;
     width: 60% !important;
   }
+  main .site-title {
+    margin-top: 0.3rem !important;
+  }
   nav .toggle-collapse {
     width: 85% !important;
   }
